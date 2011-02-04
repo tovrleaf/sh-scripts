@@ -102,9 +102,3 @@ fi
 mv $TEMPNAME $MOVETO                # move file to its final destination
 
 exit 0
-
-# recursion?
-# let override file
-
-# -h/--help          This help text
-# -o/--output <file> Write output to <file> instead of stdout
