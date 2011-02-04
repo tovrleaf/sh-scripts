@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# @author Niko Kivel <niko@tovrleaf.com>
+# @author Niko Kivelä <niko@tovrleaf.com>
 # @since Sun Aug 22 22:59:46 EEST 2010
 
 # Check that eggdrop is running and if not, start it again.
