@@ -94,7 +94,6 @@ fi
 curl -o $TEMPNAME $REMOTEFILE
 
 # file name exists, generate a new one
-echo $OPT_OVERWRITE
 if [ -f $MOVETO -a $OPT_OVERWRITE -eq 0 ]; then
     MOVETO=`get_free_filename $MOVETO`
 fi
