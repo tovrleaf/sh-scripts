@@ -60,7 +60,7 @@ do
     N) OPT_OVERWRITE=1 ;;
     h) display_help_exit ;;
     ?)  display_usage
-        exit 2;
+        exit 1;
         ;;
     esac
 done
@@ -74,7 +74,7 @@ REMOTEFILE=$1
 OUTPUT=$2
 
 FILENAME=`basename $REMOTEFILE`
-TEMPNAME=`mktemp -t ${FILENAME}` || exit 1
+TEMPNAME=`mktemp -t ${FILENAME}` || exit 2
 
 
 # 4. the program: curlget
