@@ -74,10 +74,7 @@ REMOTEFILE=$1
 OUTPUT=$2
 
 FILENAME=`basename $REMOTEFILE`
-TEMPNAME=/tmp/$RANDOM
-while [ -f $TEMPNAME ]; do
-    TEMPNAME=/tmp/$RANDOM           # generate a new random name, it's taken
-done
+TEMPNAME=`mktemp -t ${FILENAME}` || exit 1
 
 
 # 4. the program: curlget
